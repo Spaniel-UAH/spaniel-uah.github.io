@@ -1233,8 +1233,6 @@ Al ver que los paquetes ya no se pierden, los hosts irán recuperando la confian
 ### El modelo FTP
 
 
-![Modelo FTP](img/ftp.png)
-
 Se entabla la *conversación* con el servidor FTP mediante una **conexión de control**. Este proceso es un "esclavo", para poder aceptar por el puerto `21` otras posibles conexiones, asegurando la concurrencia.
 
 Si el usuario pide una transferencia de archivos, se abrirá una **conexión de datos** independiente en el puerto `20`, por la que se copiará el archivo.
@@ -1424,7 +1422,6 @@ Los códigos de respuesta son prácticamente idénticos a los anteriores de FTP
 
 Debido a la simpleza de SMTP, surgió la necesidad de crear nuevos clientes que permitan más que transferir mensajes de texto. Así es como surgen los nuevos Agentes de transferencia de mensajes de **SMTP extendido** (*ESMTP*).
 
-![SMTPE](img/smtpe.png)
 
 De esta manera, se implementó en 1992 la extensión para transmisión de datos no ASCII, denominada **MIME** (*Multipurpose Internet Mail Extension*).
 MIME permite que los datos sigan codificándose en ASCII, enviándose así por e-mail estándar. Cada mensaje MIME contiene datos informando al receptor del tipo de datos que está recibiendo, y qué codificación se ha usado. Esto permite el envío de mensajes en idiomas previamente no soportados, como el castellano o el ruso, además del envío de audio, vídeo, ..., etc.
@@ -1458,7 +1455,6 @@ Para el encoding existen varios valores definidos, como 7bit, 8bit, binary, ...,
 Se convierten los datos en un conjunto de caracteres con un tamaño de un tercio mayor. Los datos se dividen desde la izquierda en grupos de 3 bytes de 8 bits cada uno. Para la conversión se divide en 4 grupos de 6 bits cada uno de los anteriores, y se interpreta cada grupo como un número. Por último se sustituyen los números por sus caracteres correspondientes, según la tabla:
 <br>
 
-![Tabla de base64](img/tablaBase64.png)
 
 Esto significa que si queremos aplicarlo a la cadena `10100001 10001111 11000001` (grupo de 3 bytes) tendríamos que dividir dicha cadena en 4 grupos de 6 bits `101000 011000 111111 000001` (40 24 63 1) y esta división la transformaríamos según la tabla a **`oY/B`**.
 
