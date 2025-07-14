@@ -3,8 +3,9 @@ layout: post
 title: Introduction
 date: 2025-07-12 17:26
 category: Misc
-tags: [misc, personal]
+tags: [misc, personal, pinned]
 summary: First post on this blog, introducing myself and the purpose of the blog.
+pin: true
 ---
 
 # Hello, I'm Spaniel!

@@ -16,7 +16,7 @@ timezone: "Europe/Madrid"
 
 title: Spaniel # the main title
 
-tagline: Personal website # it will display as the subtitle
+tagline: Personal website for my notes and other stuff. Some things might be in Spanish. <br><br> If you have any question check my About page. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Work in progress.
